@@ -54,3 +54,5 @@ Choisir un meilleur mode de hachage pour les mots de passe. Il est preferable d'
 
 
 
+http://10.14.200.61/index.php?page=upload#
+http://10.14.200.61/index.php?page=upload#
