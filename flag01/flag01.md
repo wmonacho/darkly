@@ -134,3 +134,5 @@ Après avoir exécuté la commande, le serveur a accepté le fichier et l'a exé
 Cette faille d'upload de fichier est une vulnérabilité critique qui peut être exploitée pour exécuter du code arbitraire sur le serveur. En suivant les bonnes pratiques de sécurité (validation des fichiers, désactivation de l'exécution dans les répertoires d'upload, etc.), vous pouvez protéger votre application contre ce type d'attaque.
 
 ---
+
+The flag is : 46910d9ce35b385885a9f7e2b336249d622f29b267a1771fbacf52133beddba8
