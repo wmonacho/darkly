@@ -33,3 +33,5 @@ Une vulnérabilité d'injection SQL a été identifiée dans la barre de recherc
 En suivant ces bonnes pratiques, vous pouvez réduire considérablement les risques d'injection SQL dans votre application.
 
 
+http://10.14.200.61/index.php?page=upload#
+http://10.14.200.61/index.php?page=upload#
