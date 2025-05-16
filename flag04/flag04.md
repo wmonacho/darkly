@@ -12,6 +12,3 @@ Il ne faut jamais stocker de donnes sensibles dans les cookies sauf si ces derni
 
 Par exemple il est possible de stocker un token d'identification dans les cookies si ce dernier a des reglages strictes comme 
 httpOnly->True SameSite->strict et qu'il y a une verification forte sur le token (HS256, signature aleatoire forte) plutot qu'un algorithme de hashage faible comme md5
-
-
-
