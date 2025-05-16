@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 flag a trouver en allant sur IP/robots.txt
 
 ## Phase 1 : Découverte de la faille
@@ -30,3 +31,15 @@ flag a trouver en allant sur IP/robots.txt
 
 
 ## Conclusion
+=======
+Faille robots.txt
+
+Non raph celui ci c'est le flag10 mais je ne l'ai pas termine donc tu peux le finir ou regarder les 2 autres a trouver
+
+Je vais acheter cote cool apres et on mange ensemble apres ta correc
+
+ensuite va ici pour avoir copilot gratuit : https://github.com/settings/education/benefits
+
+il te faut ta carte etudiant
+
+>>>>>>> b61e648 (suppression flag12 et creation flag 10)
