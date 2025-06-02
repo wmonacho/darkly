@@ -20,4 +20,3 @@ Pour eviter ce genre de faiblesses :
 Se servir d'un service d'authentification comme des tokens JWT, et utiliser / verifier l'identite de l'utilisateur.
 Par exemple sur une demande de changement d'email, le chnagement devrait s'appliquer sur le current user et non sur un user specifie
 par lútilisateur dans un json et le token de connexion de lútilisateur devrait être verifie.
-

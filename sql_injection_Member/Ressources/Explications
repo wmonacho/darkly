@@ -1,4 +1,3 @@
-
 En faisant quelques tests sur la page de recherche des membres nous avons pu identifier quíl y avait possiblement une faille liee a de l'injection sql. En effet en utilisant des caracteres speciaux ou meme en essayant de rentrer des commandes sql directement le site nous renvoit des erreurs de la base de donnees.
 
 C'est un premier signe que le site est vulnerable aux injections sql.
@@ -46,7 +45,7 @@ cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
 Faire de la validation de donnees dans le back :
 Verifie que les donnes sont bien des int et uniquement des int pour un id par exemple. Ou des alphanumeriques pour des identifiants etc.
 
-Fixer des regles strictes sur les noms d'utilisateurs etc afin de faciliter les la validation dans le back.
+Fixer des regles strictes sur les noms d'utilisateurs etc afin de faciliter la validation dans le back.
 
 Choisir un meilleur mode de hachage pour les mots de passe. Il est preferable d'utiliser une librairie specialisee comme bcrypt. 
 

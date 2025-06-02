@@ -102,6 +102,3 @@ En utilisant Hydra, j'ai trouvé le mot de passe correct très rapidement, car i
 ## Conclusion
 
 Cette faille montre l'importance de protéger les formulaires de connexion contre les attaques par force brute. En implémentant des mécanismes de sécurité comme des délais, des limites de tentatives, et des CAPTCHAs, il est possible de réduire considérablement les risques associés à ce type d'attaque.
-```
----
->>>>>>> c6a2114 (flag01)
