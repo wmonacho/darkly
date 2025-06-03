@@ -1,4 +1,8 @@
+## Phase 1 : Découverte de la faille
+
 Il existe des redirections ouvertes sur le site, la redirection vers facebook, instagram ou X par exemple.
+
+## Phase 2 : Exploitation de la faille
 
 Telle qu'elle est montree sur le site, l'Open redirect n'est vraiment un probleme que dans certains cas tres specifiques
 En effet la redirection se fait via un argument dans l'URL pour que le back nous renvoie vers facebook/instagram etc.
@@ -18,9 +22,7 @@ En modifiant juste l'URL sur le site a la main nous obtenons le flag suivant :
 
 b9e775a0291fed784a2d9680fcfad7edd6b8cdf87648da647aaf4bba288bcab3
 
-
-
-Solutions :
+## Phase 3 : Comment corriger la faille
 
 
 La redirection est un outil tres utile, s'en priver n'est donc pas la solution a privilegier pour eviter ce genre de faiblesses. 
