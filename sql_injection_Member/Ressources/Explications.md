@@ -1,3 +1,5 @@
+## Phase 1 : Découverte de la faille
+
 En faisant quelques tests sur la page de recherche des membres nous avons pu identifier quíl y avait possiblement une faille liee a de l'injection sql. En effet en utilisant des caracteres speciaux ou meme en essayant de rentrer des commandes sql directement le site nous renvoit des erreurs de la base de donnees.
 
 C'est un premier signe que le site est vulnerable aux injections sql.
@@ -6,9 +8,21 @@ Une comande classique a essayer dans ce cas est : ' OR '1'='1 qui permet d'ajout
 
 Ici l'injection est un peu modifiee car la database est geree par MariaDb, 1 OR 1=1
 
+## Phase 2 : Exploitation de la faille
+
+Il est ensuite necessaire de trouver le nombre de colonne dans la table des Members pour la suite des commandes avec :
+
+1 ORDER BY N (N est a remplacer)
+
+On trouve ici 2 colonnes.
+
+On recupere ensuite le nom de la database grace a :
+
+1 union all select 1,database()
+
 On peut ensuite identifier la version du logiciel qui gere la database, ici Mariadb version 5.5.64. Ce qui nous permet d'identifier quelles sont les differentes fonctions que nous allons pouvoir utiliser dans nos requetes pour recuperer des informations importantes. Etant donne que nous sommes sur une version 5.x nous pouvons utiliser la vue information_schema.tables pour recuperer des informations importantes sur la database utilisee ici.
 
-Nous pouvons recuperer le nom de la database grace a la fonction database().
+1 union all select 1,version()
 
 Ensuite recuperer le nom de la table utilisee grace a : 1 union all select 1,group_concat(table_name) from Information_schema.tables where table_schema=database(). Ici le nom de la table est users
 
@@ -34,8 +48,7 @@ et en le codant en SH256 nous obtenons le flag :
 
 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
 
-
-Solution pour eviter ce genre de faiblesses :
+## Phase 3 : Comment corriger la faille
 
 Ne jamais utiliser d'entree utilisateurs directement dans nos requetes sql.
 
@@ -49,9 +62,3 @@ Fixer des regles strictes sur les noms d'utilisateurs etc afin de faciliter la v
 
 Choisir un meilleur mode de hachage pour les mots de passe. Il est preferable d'utiliser une librairie specialisee comme bcrypt. 
 
-
-
-
-
-http://10.14.200.61/index.php?page=upload#
-http://10.14.200.61/index.php?page=upload#
